@@ -1,4 +1,4 @@
-
+## R Programming Assignment 2
 ##
 ## The makeCacheMatrix function creates a special "matrix" object that 
 ## can cache its inverse.
@@ -7,10 +7,12 @@ makeCacheMatrix <- function(x = matrix()) {
 ## makeVector <- function(x = numeric())
   
    m <- NULL
+   
    set <- function(y) {
-   x <<- y
-   m <<- NULL
+     x <<- y
+     m <<- NULL
    }
+   
    get <- function() x
    setMatrix <- function(solve) m <<- solve
    getMatrix <- function() m
